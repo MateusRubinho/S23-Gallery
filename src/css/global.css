@@ -1,0 +1,6 @@
+body{
+    background-color: black;
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    overflow-y: auto;   /* Deixa o scroll vertical (lateral) */
+    height: 100%;  
+}

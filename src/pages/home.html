@@ -1,0 +1,54 @@
+<style>
+    .img1 {
+        width: 350px;  /* Faz a imagem ocupar 100% da largura do contêiner */
+        height: 100%;  /* Faz a imagem ocupar 100% da altura do contêiner */
+        object-fit: cover;  /* Faz o mesmo trabalho do background-size: cover */
+    }
+
+    .img2 {
+        margin-right: -100px;
+    }
+
+    .layoutHome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 1.5s ease-out;
+    }
+
+    .layoutHome.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        color: white;
+        margin-top: -80px;
+        opacity: 0;
+        transition: all 1.5s ease-out;
+        transform: translateX(-100px)
+    }
+
+    .title.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .title>p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+    }
+</style>
+<div class="layoutHome" id="animatedBox">
+    <img class="img1 " src="/src/assets/img/s23.jpg" alt="">
+    <img class="img2 " src="/src/assets/img/s23device.avif" alt="">
+</div>
+<div class="title" id="animatedBox2">
+    <p>Samsung Galaxy</p>
+    <p style="color: #90d8ba; font-size: 60px;">S23 FE 5G</p>
+</div>
