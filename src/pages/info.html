@@ -1,4 +1,6 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
     .container {
         display: flex;
         justify-content: center;
@@ -6,12 +8,17 @@
         height: 100vh;
         color: white;
         margin-top: 10em;
+        /* box-shadow: 0 0px 15px -5px #ffffff; */
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(144, 216, 186, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
     }
 
     .div-info {
-        border: 5px solid white;
+        box-shadow: 0 0 8px -2px black;
         border-radius: 10px;
-        background-color: #9f9f9f;
+        background-color: #90d8ba;
         max-width: 900px;
         margin: 0 auto;
         /* aqui foi chat */
@@ -40,14 +47,20 @@
     .com-icone {
         position: relative;
     }
-    h3{
+
+    h3 {
+        margin-top: 10px;
         text-align: center;
-        height: 35px;
-        padding-top: 2px;
+        height: 50px;
+        padding-top: 20px;
         color: #000;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 30px;
-        background-color: #6a6a6a;
+        background-color: #78b89d;
+        font-family: "Margarine", sans-serif;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
     }
 </style>
 
@@ -73,7 +86,8 @@
             </tr>
             <tr class="com-icone">
                 <td>Resistência a água</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
         </table>
         <h3>REDE</h3>
@@ -92,15 +106,18 @@
             </tr>
             <tr class="com-icone">
                 <td>HSPA+</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>LTE</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>5G</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr>
                 <td>Velocidade máxima de download</td>
@@ -115,7 +132,8 @@
         <table class="tabela-info">
             <tr>
                 <td>Processador</td>
-                <td style="font-size: 13px; padding-bottom: 10px;">1x 3.2 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x 2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510</td>
+                <td style="font-size: 13px; padding-bottom: 10px;">1x 3.2 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x
+                    2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510</td>
             </tr>
             <tr>
                 <td>Chipset</td>
@@ -123,7 +141,8 @@
             </tr>
             <tr class="com-icone">
                 <td>64 Bit</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr>
                 <td>GPU</td>
@@ -139,7 +158,8 @@
             </tr>
             <tr class="com-icone">
                 <td>Memória Expansível</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/cancel.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/cancel.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
         </table>
         <h3>TELA</h3>
@@ -205,11 +225,13 @@
             </tr>
             <tr class="com-icone">
                 <td>Autofoco</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Foco por toque</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Flash</td>
@@ -217,19 +239,23 @@
             </tr>
             <tr class="com-icone">
                 <td>HDR</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Dual Shot</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Localização</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Detecção facial</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr>
                 <td>Câmera Frontal</td>
@@ -252,7 +278,8 @@
             </tr>
             <tr class="com-icone">
                 <td>NFC</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr>
                 <td>GPS</td>
@@ -263,31 +290,38 @@
         <table class="tabela-info">
             <tr class="com-icone">
                 <td>Acelerômetro</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Proximidade</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Giroscópio</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Bússola</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Barômetro</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Impressão digital</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr class="com-icone">
                 <td>Mic. de Redução de Ruído</td>
-                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM" width="25" height="25"></td>
+                <td style="position: absolute; top: 0; border: none;"><img src="/src/assets/img/confirme.png" alt="SIM"
+                        width="25" height="25"></td>
             </tr>
             <tr>
                 <td></td>

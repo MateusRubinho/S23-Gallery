@@ -1,13 +1,21 @@
 <style>
     .img1 {
-        width: 350px;  /* Faz a imagem ocupar 100% da largura do contêiner */
-        height: 100%;  /* Faz a imagem ocupar 100% da altura do contêiner */
-        object-fit: cover;  /* Faz o mesmo trabalho do background-size: cover */
+        width: 350px;
+        /* Faz a imagem ocupar 100% da largura do contêiner */
+        height: 100%;
+        /* Faz a imagem ocupar 100% da altura do contêiner */
+        object-fit: cover;
+        /* Faz o mesmo trabalho do background-size: cover */
+        transition: opacity 1s ease-out, transform 1s ease-out;
     }
 
     .img2 {
         margin-right: -100px;
+        transition: opacity 1s ease-out, transform 1s ease-out;
     }
+
+
+
 
     .layoutHome {
         display: flex;
@@ -45,7 +53,7 @@
     }
 </style>
 <div class="layoutHome" id="animatedBox">
-    <img class="img1 " src="/src/assets/img/s23.jpg" alt="">
+    <img class="img1" src="/src/assets/img/s23.jpg" alt="">
     <img class="img2 " src="/src/assets/img/s23device.avif" alt="">
 </div>
 <div class="title" id="animatedBox2">

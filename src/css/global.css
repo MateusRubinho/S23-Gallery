@@ -1,6 +1,49 @@
-body{
+body {
     background-color: black;
-    overflow-x: hidden; /* Remove o scroll horizontal */
-    overflow-y: auto;   /* Deixa o scroll vertical (lateral) */
-    height: 100%;  
+    overflow-x: hidden;
+    /* Remove o scroll horizontal */
+    overflow-y: auto;
+    /* Deixa o scroll vertical (lateral) */
+    height: 100%;
+}
+
+
+/* Largura e altura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Estiliza o fundo da barra */
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+    /* Arredondamento da trilha */
+}
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #78b89d;
+    border-radius: 10px;
+    /* Deixa a barra arredondada */
+    border: 2px solid #1e1e1e;
+    /* Espaço entre a barra e a trilha */
+}
+
+/* Efeito ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #66a88a;
+}
+
+/* Remove as setas da barra de rolagem */
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #78b89d #1e1e1e;
 }
