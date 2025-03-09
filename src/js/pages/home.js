@@ -27,7 +27,7 @@ fetch('/src/pages/home.html')
             img2.style.transform = `translateY(${translateY}px)`; // Same effect for img2
 
             title.style.opacity = opacity;
-            title.style.transform = `rotateY(${rotate}deg)`;
+            title.style.transform = `translateY(${translateY}px)`;
         });
 
 

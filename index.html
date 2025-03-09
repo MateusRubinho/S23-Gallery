@@ -9,13 +9,23 @@
     <script src="/src/js/pages/home.js"></script>
     <script src="/src/js/pages/info.js"></script>
     <script src="/src/js/pages/fotos.js"></script>
+    <link rel="stylesheet" href="/src/css/pages/info.css">
     <style>
-        button{
+        .menu {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             position: fixed;
-            bottom: 10px;
-            margin-left: 50%;
-            padding: 10px;
-            border-radius: 50%;
+            top: 40%;
+            right: 10px;
+        }
+
+        .menu button {
+            margin: 5px;
+            padding: 7px;
+            opacity: 0.5;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -23,12 +33,15 @@
     <div style="margin: 0; padding: 0;" id="home"></div>
     <div style="margin: 0; padding: 0;" id="fotos"></div>
     <!-- <div style="margin: 0; padding: 0;" id="info"></div> -->
+    <div id="conteudo"></div>
+    <div class="menu">
+        <button><a href="#home"><img src="/src/assets/img/home.png" alt="" width="20" height="20"></a></button>
+        <button><a href="#fotos"><img src="/src/assets/img/image-gallery.png" alt="" width="20" height="20"></a></button>
+        <button onclick="mostrarInformacoes()"><img src="/src/assets/img/settings.png" alt="" width="20" height="20"></button>
+    </div>
 
 
-
-
-
-
+   
     <!-- <button>clique</button> -->
     <!-- <div id="modal">
         <div class="modal-content">
@@ -37,7 +50,7 @@
             <button class="close-btn" onclick="closeModal()">Fechar</button>
         </div>
     </div> -->
-<!-- 
+    <!-- 
     <script>
         // Função para mostrar o modal ao carregar a página
         window.onload = function() {
