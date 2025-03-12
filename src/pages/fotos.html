@@ -51,6 +51,18 @@
         color: white;
     }
 
+    /* .fotoFutura {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+        visibility: hidden;
+    } */
+
+
     .fotoFutura {
         position: fixed;
         top: 50%;
@@ -59,9 +71,14 @@
         z-index: 999;
         background: rgba(0, 0, 0, 0.9);
         border-radius: 10px;
-        /* height: 100vh;
-        width: 100%; */
+        width: 100vw;
+        /* Largura total da tela */
+        height: 101vh;
+        /* Altura total da tela */
         visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .fotoFutura>img {
@@ -70,13 +87,13 @@
 
     .closeFoto {
         position: absolute;
-        top: -30px;
-        right: -40px;
+        top: 30px;
+        right: 30px;
         cursor: pointer;
     }
 </style>
 
-<section >
+<section>
     <div id="divImagem" class="fotoFutura">
         <div class="closeFoto" onclick="closeFoto()">
             <img src="/src/assets/img/botao-x.png" alt="" width="20" height="20">
